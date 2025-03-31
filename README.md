@@ -1,6 +1,4 @@
 # MAS - Modelowanie i Analiza Systemów Informacyjnych
-
-![PJATK Logo](https://www.pja.edu.pl/images/logo-pjatk.png)  
 **Repository for the MAS course at PJATK**
 
 ---
@@ -21,15 +19,15 @@ Implementation of conceptual models in object-oriented and relational environmen
 
 | Project           | Concepts Implemented             | Business Case               | Tech Stack             |
 | ----------------- | -------------------------------- | --------------------------- | ---------------------- |
-| **[MP01](MP01/)** | Classes, Attributes, Persistence | Student Management System   | C#, JSON Serialization |
-| **[MP02](MP02/)** | Associations, Composition        | Package Delivery System     | C#, OOP Principles     |
-| **[MP03](MP03/)** | Inheritance, Polymorphism        | University Personnel System | C#, Interfaces         |
-| **[MP04](MP04/)** | Constraints, Validation          | Group Management System     | C#, Logger Patter      |
+| **[MP01](MP1/)** | Classes, Attributes, Persistence | Student Management System   | C#, JSON Serialization |
+| **[MP02](MP2/)** | Associations, Composition        | Package Delivery System     | C#, OOP Principles     |
+| **[MP03](MP3/)** | Inheritance, Polymorphism        | University Personnel System | C#, Interfaces         |
+| **[MP04](MP4/)** | Constraints, Validation          | Group Management System     | C#, Logger Patter      |
 
 ---
 
 ## 🏆 Final Project: University Calendar System
-**`Projekt` directory contains complete documentation**
+**`Projekt` [directory](Projekt/) contains complete documentation**
 
 ### Key Features:
 - Role-based access (Student/Teacher/Director)
