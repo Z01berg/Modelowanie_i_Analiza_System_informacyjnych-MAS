@@ -1,0 +1,188 @@
+﻿@using WebApplication1000.Entities
+@model IEnumerable<Student>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management for Dydaktyk</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 300px;
+            border-right: 1px solid #ccc;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar h1,
+        .sidebar button {
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5a6268;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .list-display {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="password"],
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <h1>Menu</h1>
+    <button onclick="window.location.href='/Authorization/DydaktykDashboard'">Main</button>
+    <button onclick="window.location.href='/Students/list-dydaktyk'">Manage Students</button>
+    <button onclick="window.location.href='/Authorization/logout'">Log out</button>
+</div>
+
+<div class="content">
+    <div class="list-display">
+        <h2>Students List</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Groups</th>
+                <th>ITN</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var student in Model)
+            {
+            <tr>
+                <td>@student.OsobaSIndex</td>
+                <td>@student.OsobaSIndexNavigation?.Name</td>
+                <td>@student.OsobaSIndexNavigation?.Surname</td>
+                <td>
+                    @if (student.GrupaIdGrupas != null && student.GrupaIdGrupas.Count > 0)
+                    {
+                    @foreach (var group in student.GrupaIdGrupas)
+                    {
+                    <span>@group.IdGrupa</span><br />
+                    }
+                    }
+                </td>
+                <td>
+                    @if (student.Itn != null)
+                    {
+                    <span style="color: red;">@student.Itn</span>
+                    }
+                    else
+                    {
+                    <span>@student.Itn</span>
+                    }
+                </td>
+                <td>
+                    <form action="/Students/update-itn" method="post" style="display:inline;">
+                        <input type="hidden" name="studentId" value="@student.OsobaSIndex" />
+                        <select name="itn">
+                            <option value="">Select ITN</option>
+                            <option value="true" @(student.Itn != null ? "selected" : "")>+</option>
+                            <option value="false" @(student.Itn == null ? "selected" : "")>-</option>
+                        </select>
+                        <input type="submit" value="Update" />
+                    </form>
+                </td>
+            </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

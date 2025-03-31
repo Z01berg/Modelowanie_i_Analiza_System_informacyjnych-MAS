@@ -1,0 +1,59 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication1000
+build_property.RootNamespace = WebApplication1000
+build_property.ProjectDir = C:\Users\HP\Desktop\MAS\HU\WebApplication1000\WebApplication1000\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\MAS\HU\WebApplication1000\WebApplication1000
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Authorization/_DydaktykLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yaXphdGlvblxfRHlkYWt0eWtMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Authorization/_DyrektorLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yaXphdGlvblxfRHlyZWt0b3JMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Authorization/_LoginPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yaXphdGlvblxfTG9naW5QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Authorization/_StudentLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yaXphdGlvblxfU3R1ZGVudExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Dydaktyks/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHlkYWt0eWtzXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Groups/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Semesters/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VtZXN0ZXJzXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Students/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/MAS/HU/WebApplication1000/WebApplication1000/Views/Students/List_Dydaktyk.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcTGlzdF9EeWRha3R5ay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
